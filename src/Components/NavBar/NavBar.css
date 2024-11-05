@@ -1,0 +1,195 @@
+/* Navbar Container */
+.navBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    transition: none;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #fde1ff 100%, #e1ffea22);
+    align-items: center;
+    color: black;
+    box-shadow: 0 1px 3px -2px black;
+    max-width: 100%;  /* Use max-width instead of width */
+    margin: 0 auto;    /* Center align the navbar */
+    padding: 20px 40px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Logo Section */
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-logo p {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+/* Menu Section */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    color: black;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+}
+
+.nav-menu li:hover {
+    color: #f0c040;
+}
+
+/* Login and Cart Section */
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-right: 20px;
+    position: relative; /* Allows absolute positioning of the count */
+}
+/* Login Button */
+.nav-login-button {
+    background-color: white;
+    color: #333;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #f0c040;
+}
+
+.nav-login-button:hover {
+    background-color: #333;
+    color: #f0c040;
+    border: 1px solid #f0c040;
+}
+
+/* Cart Icon */
+.nav-cart-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Cart Count Circle */
+.nav-cart-count {
+    position: absolute; /* Positioning to overlap the cart icon */
+    top: 0; /* Aligns at the top */
+    right: 0; /* Aligns to the right */
+    background-color: green; /* Background color */
+    color: white; /* Text color */
+    border-radius: 50%; /* Makes it circular */
+    width: 20px; /* Fixed width */
+    height: 20px; /* Fixed height */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-size: 12px; /* Font size */
+}
+
+/* Responsive Design */
+
+/* Tablet Screens and Smaller */
+@media screen and (max-width: 768px) {
+    .navBar {
+        padding: 15px 10px;
+    }
+
+    .nav-logo p {
+        font-size: 24px;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu li {
+        font-size: 16px;
+    }
+
+    .nav-login-cart {
+        gap: 15px;
+    }
+
+    .nav-login-button {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .nav-cart-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-cart-count {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+        top: 4px;
+        right: 4px;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 480px) {
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-burger {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: black;
+    }
+
+    .nav-login-cart {
+        gap: 10px;
+    }
+
+    .nav-login-button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .nav-cart-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-cart-count {
+        width: 14px;
+        height: 14px;
+        font-size: 9px;
+        top: -6px;
+        right: -6px;
+    }
+}

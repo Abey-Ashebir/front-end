@@ -1,0 +1,17 @@
+.breadcrum {
+    padding-top: 40px;
+    gap: 8px;
+    text-transform: capitalize;
+    margin: 60px 170px;
+    font-weight: 600;
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    font-size: 16px; /* Font size */
+    color: #5e5e5e; /* Text color */
+}
+
+.breadcrum img {
+    margin: 0 10px; /* Space between text and icons */
+    height: 16px; /* Adjust icon size */
+    width: auto; /* Maintain aspect ratio */
+}

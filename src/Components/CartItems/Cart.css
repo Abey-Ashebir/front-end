@@ -1,0 +1,108 @@
+.cartitems {  
+    padding: 100px 40px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cartitems-format-main {
+
+    display: grid;
+    gap: 80px;
+    align-items: center;
+    grid-template-columns: repeat(6, 1fr);
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 2px solid #e0e0e0; /* Separator line */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    color: #333; /* Header text color */
+}
+
+.cartitem-format {
+margin: auto;
+    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    padding: 15px 0; /* Increased padding for better spacing */
+    border-bottom: 1px solid #e0e0e0; /* Separator line for items */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.cartitem-format:hover {
+    background-color: #f5f5f5; /* Highlight on hover */
+}
+
+.cartitem-producticon {
+    width: 50px;
+    height: auto;
+}
+
+.cartitem-title {
+    font-weight: 500; /* Slightly bold text for product name */
+}
+
+.cartitem-quantity {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 5px; /* Rounded edges for the quantity box */
+}
+
+.cartitem-removeicon {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s; /* Animation for icon */
+}
+
+.cartitem-removeicon:hover {
+    transform: scale(1.2); /* Scale up on hover */
+}
+
+/* Optional styles for total and empty cart message */
+.cart-total {
+    font-size: 18px; /* Slightly larger font for total */
+    font-weight: bold;
+    margin-top: 20px; /* Space above total */
+    text-align: right; /* Align to the right */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+}
+
+.empty-cart {
+    text-align: center; /* Center the empty cart message */
+    font-size: 20px;
+    color: #888; /* Gray color for empty cart message */
+}
+.cartitem-quantity-controls {
+    display: flex; /* Align buttons and quantity in a row */
+    align-items: center; /* Center vertically */
+}
+
+.quantity-button {
+    width: 30px; /* Fixed width for buttons */
+    height: 30px; /* Fixed height for buttons */
+    border: none; /* Remove border */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 5px; /* Space between buttons and quantity */
+}
+
+.minus {
+    background-color: red; /* Red for decrease */
+}
+
+.plus {
+    background-color: green; /* Green for increase */
+}
+
+.cartitem-quantity {
+    padding: 5px 10px; /* Padding for quantity display */
+    border: 1px solid #ccc; /* Border around quantity display */
+    border-radius: 5px; /* Rounded edges */
+    width: 40px; /* Fixed width */
+    text-align: center; /* Center the number */
+}

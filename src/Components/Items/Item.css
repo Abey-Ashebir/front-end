@@ -1,0 +1,98 @@
+/* Container for the item */
+.items-container {
+    width: 100%; /* Default to 100% for flexibility */
+    max-width: 350px; /* Limit maximum width */
+    padding: 15px;
+    gap: 20px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Center the item container horizontally */
+}
+
+.items-container:hover {
+    transform: scale(1.05); /* Zoom on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+}
+
+/* Name/Description Styling */
+.description {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333; /* Darker text color */
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.items-container:hover .description {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Price Section */
+.price {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 8px 0;
+    display: block; /* Stack prices vertically */
+}
+
+/* Styling for the new price */
+.new-price {
+    color: #10b981; /* Green for new price */
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* Styling for the old price */
+.old-price {
+    font-size: 18px;
+    font-weight: 500;
+    color: red;
+}
+
+/* Image Styling */
+.items-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.items-container:hover img {
+    transform: scale(1.05); /* Slight zoom on image hover */
+}
+
+/* Add padding between prices */
+.item-prices {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Center prices */
+    margin: 10px 0;
+}
+
+/* Responsive Design for Various Screen Sizes */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .items-container {
+        max-width: 300px; /* Reduce width slightly on medium screens */
+    }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+    .items-container {
+        max-width: 100%; /* Make it full width on small screens */
+    }
+
+    /* Optional: Adjust font size for better readability */
+    .description {
+        font-size: 18px;
+    }
+
+    .new-price, .old-price {
+        font-size: 20px; /* Adjust price font size for smaller screens */
+    }
+}

@@ -1,0 +1,57 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    min-height: 90vh;
+    margin-bottom: 50px;
+    transition: transform 0.6s;
+    max-width: 1200px; /* Set a maximum width */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+
+.popular:hover {
+    transform: scale(1.05);
+}
+
+.popular h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.popular hr {
+    width: 100%;
+    border: 1px solid #e5e7eb;
+    margin: 10px 0;
+}
+
+.popular-item {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 items per row, adjust based on available space */
+    gap: 20px; /* Space between items */
+    justify-items: center; /* Center items within the grid */
+    width: 100%;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .popular-item {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust grid columns for tablet-sized screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popular h1 {
+        font-size: 32px; /* Reduce font size for smaller screens */
+    }
+
+    .popular-item {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid columns for mobile screens */
+    }
+}

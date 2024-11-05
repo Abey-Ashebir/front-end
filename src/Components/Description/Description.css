@@ -1,0 +1,46 @@
+.description-box {
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px; /* Space around content */
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the component */
+}
+
+.description-navigator {
+    display: flex; /* Use flexbox for navigation layout */
+    justify-content: space-between; /* Space between items */
+    border-bottom: 2px solid #e0e0e0; /* Bottom border for emphasis */
+    margin-bottom: 15px; /* Space below the navigator */
+}
+
+.description-nav-box {
+    padding: 10px 20px; /* Space inside navigation box */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #333; /* Dark text for contrast */
+    font-weight: 600; /* Bold text for emphasis */
+    border-bottom: 3px solid transparent; /* Space for active indicator */
+    transition: border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.description-nav-box.active {
+    border-color: #007bff; /* Active tab color */
+    color: #007bff; /* Match text color with active tab */
+}
+
+.description-nav-fade {
+    padding: 10px 20px; /* Space inside faded navigation */
+    color: #999; /* Lighter color for inactive tab */
+    font-weight: 500; /* Normal weight */
+}
+
+.description-content {
+    padding: 15px 0; /* Space around content */
+    font-size: 16px; /* Readable font size */
+    line-height: 1.6; /* Improved line height for readability */
+    color: #555; /* Darker text color */
+}
+
+.description-content p {
+    margin-bottom: 15px; /* Space between paragraphs */
+}

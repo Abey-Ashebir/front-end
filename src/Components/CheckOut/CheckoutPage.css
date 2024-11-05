@@ -1,0 +1,80 @@
+.checkout-page {
+    padding-top: 80px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    text-align: center;  /* Center the entire content */
+}
+
+.checkout-page h1 {
+    padding: 10px 20px;
+    font-size: 32px;  /* Adjust for better readability */
+    text-align: center;  /* Center the H1 text */
+    margin-bottom: 30px; /* Add some space below the title */
+}
+
+.checkout-summary {
+    max-width: 800px;
+    margin: auto;  /* Center the checkout summary */
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+    width: 100%;
+    margin: auto;
+}
+
+.checkout-item img {
+    width: 100px;
+    height: 100px;
+    padding-right: 15px;  /* Adjusted padding for image */
+}
+
+.checkout-item p {
+    flex-grow: 1;
+    text-align: left;  /* Left-align item descriptions */
+    margin-left: 10px;
+}
+
+.checkout-total {
+    padding: 20px 15px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;  /* Center the total price */
+    margin-top: 20px; /* Add space above total */
+}
+
+.payment-options {
+    padding: 10px 15px;
+    margin-top: 30px;
+    text-align: center; /* Center the payment options */
+}
+
+.payment-btn {
+    padding: 10px 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.payment-btn.cbe {
+    background-color: #0275d8;
+    color: white;
+}
+
+.payment-btn.telebirr {
+    background-color: #ff7f0e;
+    color: white;
+}
+
+.payment-btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,74 @@
+.newsletter {
+    width: 65%;
+    min-height: 40vh; /* Use min-height for flexibility */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 80px; /* Adjust padding for better layout */
+    margin-bottom: 150px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 30px;
+    border-radius: 15px; /* Rounded corners for the newsletter container */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.newsletter:hover{
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+.newsletter h1 {
+    color: #171717;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+}
+
+.newsletter p {
+    color: #555555;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+} 
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    width: 100%;
+    max-width: 730px;
+    height: 70px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow around the input */
+    border: none; /* Remove border for cleaner look */
+    overflow: hidden;
+}
+
+.newsletter input {
+    flex-grow: 1; /* Allow input to grow within the div */
+    padding-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: transparent; /* Transparent background for modern look */
+}
+
+.newsletter div button {
+    width: 210px;
+    height: 100%;
+    border-radius: 0 50px 50px 0;
+    background: #171717;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.newsletter div button:hover {
+    background: #ff4b2b; /* Button hover effect */
+}

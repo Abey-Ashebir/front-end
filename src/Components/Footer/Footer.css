@@ -1,0 +1,129 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 20px;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    color: #383838;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    width: 50px;
+}
+
+.footer-logo p {
+    font-size: 36px;
+    font-weight: 700;
+    color: #383838;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+    color: #ff4b2b;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons-container {
+    padding: 10px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.footer-icons-container img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-icons-container:hover {
+    transform: scale(1.1);
+}
+
+.social-text {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.footer-icons-container:hover .social-text {
+    opacity: 1;
+}
+
+/* Specific background colors for each social icon when hovered */
+.footer-icons-container.instagram:hover {
+    background-color: #f77737; /* Instagram gradient-like color */
+}
+
+.footer-icons-container.pinterest:hover {
+    background-color: #e60023; /* Pinterest red */
+}
+
+.footer-icons-container.whatsapp:hover {
+    background-color: #171515; /* WhatsApp green */
+}
+.footer-icons-container.linkedin:hover {
+    background-color: #2867B2; /* WhatsApp green */
+}
+
+/* Additional styles for footer */
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    height: 2px;
+    background: #c7c7c7;
+    margin-bottom: 10px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #707070;
+}

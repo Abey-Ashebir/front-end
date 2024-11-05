@@ -1,0 +1,88 @@
+.shop-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  /* background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%); */
+  background-color: white;
+}
+
+.banner-container {
+  display: flex; /* Align children (image and video) in a row */
+  align-items: center; /* Center them vertically */
+  width: 100%; /* Full width */
+  margin: 0; /* Remove margins */
+  overflow: hidden; /* Prevent overflow of child elements */
+}
+
+.shopcategory-banner {
+  flex: 1; /* Allow video to grow and take available space */
+  height: 400px; /* Fixed height for equal size */
+  object-fit: cover; /* Cover the area without stretching */
+  max-width: 100%; /* Ensure it doesn’t exceed container width */
+}
+
+.side-image {
+  width: 30%; /* Adjust as needed */
+  height: 400px; /* Fixed height for equal size */
+  object-fit: cover; /* Cover the area without stretching */
+}
+
+/* Maintain existing styles for other sections */
+.shopcategory-indexsort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20PX;
+  box-shadow: #007bff;
+  width: 100%;
+  max-width: 1200px; /* Limit the maximum width */
+  margin-bottom: 20px; /* Space below the index and sort */
+}
+
+.shopcattegory-sort {
+  font-size: 16px; /* Adjust font size for sorting */
+  color: #555; /* Color for sort text */
+}
+
+.shopcategory-product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid for products */
+  gap: 20px; /* Space between product items */
+  width: 100%;
+  max-width: 1200px; /* Limit the maximum width */
+}
+
+.shopcattegory-loadmore {
+  margin-top: 30px; /* Space above the load more button */
+  font-size: 18px; /* Font size for load more text */
+  color: #007bff; /* Color for the load more text */
+  cursor: pointer; /* Indicate that it is clickable */
+  text-align: center; /* Center the text */
+}
+
+.shopcattegory-loadmore:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .banner-container {
+    flex-direction: column; /* Stack the image and video on smaller screens */
+  }
+
+  .shopcategory-banner,
+  .side-image {
+    width: 100%; /* Full width on smaller screens */
+    height: 200px; /* Adjust height for smaller screens if needed */
+  }
+
+  .shopcategory-indexsort {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .shopcattegory-sort {
+    margin-top: 10px; /* Add margin for spacing */
+  }
+}

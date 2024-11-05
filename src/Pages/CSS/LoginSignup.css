@@ -1,0 +1,87 @@
+.loginsignup {
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.loginsignup-container {
+  background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+.loginsignup-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loginsignup-fields div {
+  margin-bottom: 15px;
+}
+
+.loginsignup-fields input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.loginsignup-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.loginsignup-btn:hover {
+  background-color: #218838;
+}
+
+.loginsignup-login {
+  margin-top: 20px;
+  color: #555;
+}
+
+.loginsignup-login span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.loginsignup-agreement {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loginsignup-agreement input {
+  margin-right: 10px;
+}
+
+.loginsignup-agreement p {
+  font-size: 14px;
+  color: #777;
+}
+
+.loginsignup-agreement span {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.loginsignup-forgot {
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+}
